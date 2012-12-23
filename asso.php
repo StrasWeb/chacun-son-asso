@@ -68,6 +68,7 @@ if (isset($myAsso)) {
             <?php
     foreach ($myAsso as $info=>$value) {
         if ($info != 'id') {
+            $meta='';
             switch ($info) {
             case 'Nom complet':
                 $meta='legalName';
