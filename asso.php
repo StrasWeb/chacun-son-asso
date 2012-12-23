@@ -62,7 +62,7 @@ if (isset($myAsso)) {
     );
             ?>
             <div id="mapdiv" class="map" style="width:480px; height:320px;"></div>
-            <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+            <script src="OpenLayers.js"></script>
             <script src="map.js" async="async"></script>
             <table>
             <?php
