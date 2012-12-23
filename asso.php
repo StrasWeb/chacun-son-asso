@@ -41,13 +41,14 @@ if (isset($myAsso)) {
     <?php require 'head.php'; ?>
         <h1>Chacun son asso</h1>
         <?php
-if (isset($_SERVER['HTTP_REFERER'])
-    && parse_url($_SERVER['HTTP_REFERER'])['host'] == $_SERVER['SERVER_NAME']
-) {
-    print(
-        '<a href="'.$_SERVER['HTTP_REFERER'].
-        '" data-icon="back" data-iconpos="notext">Retour</a>'
-    );
+if (isset($_SERVER['HTTP_REFERER'])) {
+    $referer=parse_url($_SERVER['HTTP_REFERER']);
+    if ($referer['host'] == $_SERVER['SERVER_NAME']) {
+        print(
+            '<a href="'.$_SERVER['HTTP_REFERER'].
+            '" data-icon="back" data-iconpos="notext">Retour</a>'
+        );
+    }
 }
         ?>
         </header>
