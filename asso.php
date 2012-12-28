@@ -61,7 +61,7 @@ if (isset($myAsso)) {
         $myAsso->{'Sigle ou acronyme'}.'</abbr></h2>'
     );
             ?>
-            <div id="mapdiv" class="map" style="width:480px; height:320px;"></div>
+            <div id="mapdiv" class="map" style="width:240px; height:180px;"></div>
             <script src="OpenLayers.js"></script>
             <script src="map.js" async="async"></script>
             <table>
