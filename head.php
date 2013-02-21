@@ -8,5 +8,5 @@
     <body>
         <div data-role="page">
         <header data-role="header" data-theme="b">
-        <a href="index.php" data-icon="home" data-iconpos="notext">Accueil</a>
+        <a href="index.php" data-icon="search" data-iconpos="notext">Nouvelle recherche</a>
         

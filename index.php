@@ -19,10 +19,12 @@
         <h1 style="white-space: normal;">Chacun son asso</h1>
         </header>
         <div data-role="content">
-            <p>Tu es étudiant ? Tu veux rejoindre une association ?</p> 
+            <h2>Recherche</h2> 
             <form action="results.php">
+                <div data-role="fieldcontain">
                 <label for="name">Nom de l'association :</label>
-                <input autofocus type="search" name="name" id="name" /><br/>
+                <input autofocus type="search" name="name" id="name" />
+                </div>
                 <datalist id="deps">
                 <option value="01">01 - Ain</option>
                 <option value="02">02 - Aisne</option>
@@ -130,9 +132,12 @@
                 <option value="987">987 - Polynésie Française</option>
                 <option value="988">988 - Nouvelle Calédonie</option>
                 </datalist>
+                <div data-role="fieldcontain">
                 <label for="dep">Département :</label>
                 <input list="deps" type="number" min="1" max="988"
-                name="dep" id="dep" /><br/>
+                name="dep" id="dep" placeholder="Numéro du département (e.g. 67)" />
+                </div>
+                <div data-role="fieldcontain">
                 <label for="theme">Thématique :</label>
                 <select id="theme" name="theme">
                     <option value="">Toutes</option>
@@ -143,7 +148,7 @@ foreach ($themes as $theme) {
 }
                 ?>
                 </select>
-                <br/>
+                </div>
                 <input type="submit" value="Rechercher" />
             
             </form>
